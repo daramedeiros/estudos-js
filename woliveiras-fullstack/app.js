@@ -126,3 +126,54 @@ let pessoas = [
 //Para acessar os itens dessa lista, fazemos lista[posição]
 
 console.log(pessoas[0])
+
+//Adicionando dados no Array
+//Para adicionar dados no final ou no começo da nossa lista utilizando push (no final) ou unshift (no começo).
+
+let novaLista = []
+
+novaLista.push('Wiliam')
+novaLista.push('Robson')
+novaLista.push('Marília')
+
+console.log(novaLista)
+
+//adicionando outro nome no começo da lista
+novaLista.unshift('Vanessa')
+
+console.log(novaLista)
+
+
+//removendo dados do Array
+//Podemos remover itens do começo ou do final do array com os métodos shift (do começo) e pop (do final).
+
+novaLista.shift()
+
+console.log(novaLista)
+
+novaLista.pop()
+
+console.log(novaLista)
+
+//Maps 
+//É uma estrutura simples de chave e valor. A diferença é que maps aceitam chaves de qualquer tipo de dado
+
+let meuMapa1 = new Map()
+
+//ou
+
+// let meuMapa2 = new Map(iterável)
+
+//Dentro de um map precisamos de um dado que seja iterável. Ou seja, precisa ser algo que possamos acessar va posição e consigamos acessar um item por vez em uma rotina, um array
+
+let meuNovoMapa = new Map([
+    ['bla', 'bla'],
+    [1,2],
+    [true,false]
+])
+
+//Diferente do array, map não é uma coleção indexável, não vamos acessar os seus valores através da posição em que ele está, mas através de sua chave com o método get.
+
+meuNovoMapa.get('bla')
+
+console.log(meuNovoMapa)
